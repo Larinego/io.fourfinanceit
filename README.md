@@ -41,6 +41,9 @@ In its default configuration, application has authentication and authorization e
 
 This will secure all APIs and in order to access them, token authentication is required. Apart from authentication, APIs also require authorization. This is done via roles that a user can have. The existing roles are listed below with the corresponding permissions
 
+user with USER_ROLE : user, aaa
+user with ADMIN_ROLE : admin, aaa (can not be created, all user after register get USER_ROLE)
+
 USER_ROLE -> userapi/**
 ADMIN_ROLE -> adminapi/**
 anauthenticated -> authapi/**
