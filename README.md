@@ -26,6 +26,13 @@ Requirements are met
 Code quality (both production and test)
 How simple it is to run the application (embedded DB/embedded container)
 
+Running application locally
+With maven command line
+git clone https://github.com/Larinego/io.fourfinanceit
+cd io.fourfinanceit
+./mvnw spring-boot:run
+
+
 Swagger REST API documentation presented here (after application start):
 http://localhost:8080/application/swagger-ui.html
 
