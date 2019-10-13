@@ -25,3 +25,16 @@ Use of spring-boot provided in this template is not obligatory, you are free to 
 Requirements are met
 Code quality (both production and test)
 How simple it is to run the application (embedded DB/embedded container)
+
+Swagger REST API documentation presented here (after application start):
+http://localhost:8080/application/swagger-ui.html
+
+Security configuration
+In its default configuration, application has authentication and authorization enabled.
+
+This will secure all APIs and in order to access them, token authentication is required. Apart from authentication, APIs also require authorization. This is done via roles that a user can have. The existing roles are listed below with the corresponding permissions
+
+USER_ROLE -> userapi/**
+ADMIN_ROLE -> adminapi/**
+anauthenticated -> authapi/**
+
