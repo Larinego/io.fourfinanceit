@@ -26,12 +26,12 @@ Requirements are met
 Code quality (both production and test)
 How simple it is to run the application (embedded DB/embedded container)
 
-Running application locally
-With maven command line
-git clone https://github.com/Larinego/io.fourfinanceit
-cd io.fourfinanceit
-./mvnw spring-boot:run
+Running application locally:
+With maven command line:
 
+  git clone https://github.com/Larinego/io.fourfinanceit  
+  cd io.fourfinanceit  
+  ./mvnw spring-boot:run
 
 Swagger REST API documentation presented here (after application start):
 http://localhost:8080/application/swagger-ui.html
@@ -42,9 +42,12 @@ In its default configuration, application has authentication and authorization e
 This will secure all APIs and in order to access them, token authentication is required. Apart from authentication, APIs also require authorization. This is done via roles that a user can have. The existing roles are listed below with the corresponding permissions
 
 user with USER_ROLE : user, aaa
+
 user with ADMIN_ROLE : admin, aaa (can not be created, all user after register get USER_ROLE)
 
 USER_ROLE -> userapi/**
+
 ADMIN_ROLE -> adminapi/**
+
 anauthenticated -> authapi/**
 
